@@ -1,13 +1,122 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  width: 98vw;
+  height: 100vh;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 32px 0px;
+  font-size: 3em;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.title {
+  color: #ff4c58;
+}
+
+h2 {
+  margin-bottom: 4px;
+}
+
+h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  margin: 14px 14px;
+  font-size: 1.5em;
+}
+
+.statsBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.borderStats {
+  height: 1px;
+  width: 80px;
+  background-color: black;
+}
+
+h2, h3 {
+  color: #ff4c58;
+}
+
+.category {
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.weaponGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.weaponBlock {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nextSkinBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  width: 30px;
+  margin: 0px 10px;
+}
+
+.arrow {
+  height: 26px;
+  cursor: pointer;
+}
+
+.reverse {
+  transform: rotate(180deg);
+}
+
+.weaponCard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  border: solid black 1px;
+  width: 400px;
+  border-radius: 8px;
+  margin: 12px 12px;
+  padding: 10px;
+  user-select: none;
+}
+
+.weaponImg {
+  max-height: 110px;
+  max-width: 300px;
+  margin: 20px 0px;
+}
+
+.weaponInfos {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.dataInfos p {
+  font-weight: bold;
+}
+
+.skinList {
+  font-size: 0.8em;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.meleeWeapon {
+  height: 114px;
 }
